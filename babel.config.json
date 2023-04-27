@@ -1,0 +1,25 @@
+{
+    "plugins": ["@babel/plugin-transform-runtime", "babel-plugin-replace-ts-export-assignment",
+        [
+        "module-resolver",
+        {
+          "root": [
+            "./src"
+          ],
+          "alias": {
+            "defender-ui": "./src"
+          }
+        }
+      ]
+    ],
+    "presets": [
+      [
+        "babel-preset-react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  }
+  
